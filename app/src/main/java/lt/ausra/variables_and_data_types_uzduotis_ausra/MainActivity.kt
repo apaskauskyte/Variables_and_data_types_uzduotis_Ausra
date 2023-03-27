@@ -21,5 +21,13 @@ class MainActivity : AppCompatActivity() {
         val maxShort = Short.MAX_VALUE
         val maxInt = Int.MAX_VALUE
         val maxLong = Long.MAX_VALUE
+
+        val suma = maxByte + maxShort + maxInt + maxLong
+
+        Log.i(TAG, "Maximum Byte Value: $maxByte\n" +
+                "Maximum Short Value: $maxShort\n" +
+                "Maximum Integer Value: $maxInt\n" +
+                "Maximum Long Value: $maxLong\n" +
+                "Sum of Maximum Values: $suma")
     }
 }
