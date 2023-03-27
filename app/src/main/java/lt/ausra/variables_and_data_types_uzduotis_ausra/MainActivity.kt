@@ -32,15 +32,23 @@ class MainActivity : AppCompatActivity() {
         val asteriskChar = '*'
         val asteriskCharId = asteriskChar.code
 
-        Log.i(TAG, "Maximum Byte Value: $maxByte\n" +
-                "Maximum Short Value: $maxShort\n" +
-                "Maximum Integer Value: $maxInt\n" +
-                "Maximum Long Value: $maxLong\n" +
-                "Sum of Maximum Values: $suma\n" +
-                "Reference of Float: $float\n" +
-                "Reference of Double: $double\n" +
-                "% Character: $percentageChar\n" +
-                "8 Character: $eightChar\n" +
-                "* Character ID: $asteriskCharId")
+        val isMaxShortGreaterThanMaxInt = maxShort > maxInt
+        val isSumNotEqualToMaxLong = suma != maxLong
+
+        Log.i(
+            TAG, "Maximum Byte Value: $maxByte\n" +
+                    "Maximum Short Value: $maxShort\n" +
+                    "Maximum Integer Value: $maxInt\n" +
+                    "Maximum Long Value: $maxLong\n" +
+                    "Sum of Maximum Values: $suma\n" +
+                    "Reference of Float: $float\n" +
+                    "Reference of Double: $double\n" +
+                    "% Character: $percentageChar\n" +
+                    "8 Character: $eightChar\n" +
+                    "* Character ID: $asteriskCharId\n" +
+                    "Is Max Short Value greater than Max Integer Value: " +
+                    "$isMaxShortGreaterThanMaxInt\n" +
+                    "Is Sum not equal to Max Long Value: $isSumNotEqualToMaxLong"
+        )
     }
 }
