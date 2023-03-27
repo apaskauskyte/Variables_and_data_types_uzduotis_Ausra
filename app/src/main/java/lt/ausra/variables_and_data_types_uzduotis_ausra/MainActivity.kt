@@ -24,10 +24,15 @@ class MainActivity : AppCompatActivity() {
 
         val suma = maxByte + maxShort + maxInt + maxLong
 
+        var Float: Float? = null
+        var Double: Double? = null
+
         Log.i(TAG, "Maximum Byte Value: $maxByte\n" +
                 "Maximum Short Value: $maxShort\n" +
                 "Maximum Integer Value: $maxInt\n" +
                 "Maximum Long Value: $maxLong\n" +
-                "Sum of Maximum Values: $suma")
+                "Sum of Maximum Values: $suma\n" +
+                "Reference of Float: $Float\n" +
+                "Reference of Double: $Double")
     }
 }
